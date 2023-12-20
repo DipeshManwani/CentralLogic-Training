@@ -1,0 +1,14 @@
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\bin\Debug\net7.0\Assignment_week2_Dipesh_Manwani.exe
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\bin\Debug\net7.0\Assignment_week2_Dipesh_Manwani.deps.json
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\bin\Debug\net7.0\Assignment_week2_Dipesh_Manwani.runtimeconfig.json
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\bin\Debug\net7.0\Assignment_week2_Dipesh_Manwani.dll
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\bin\Debug\net7.0\Assignment_week2_Dipesh_Manwani.pdb
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.GeneratedMSBuildEditorConfig.editorconfig
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.AssemblyInfoInputs.cache
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.AssemblyInfo.cs
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.csproj.CoreCompileInputs.cache
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.dll
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\refint\Assignment_week2_Dipesh_Manwani.dll
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.pdb
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\Assignment_week2_Dipesh_Manwani.genruntimeconfig.cache
+D:\Central Logic Assignments\Assignment_week2_Dipesh_Manwani\obj\Debug\net7.0\ref\Assignment_week2_Dipesh_Manwani.dll

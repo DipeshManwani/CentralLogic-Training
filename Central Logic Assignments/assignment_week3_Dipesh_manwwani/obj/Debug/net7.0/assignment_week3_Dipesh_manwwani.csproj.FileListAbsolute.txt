@@ -1,0 +1,4 @@
+D:\Central Logic Assignments\assignment_week3_Dipesh_manwwani\obj\Debug\net7.0\assignment_week3_Dipesh_manwwani.GeneratedMSBuildEditorConfig.editorconfig
+D:\Central Logic Assignments\assignment_week3_Dipesh_manwwani\obj\Debug\net7.0\assignment_week3_Dipesh_manwwani.AssemblyInfoInputs.cache
+D:\Central Logic Assignments\assignment_week3_Dipesh_manwwani\obj\Debug\net7.0\assignment_week3_Dipesh_manwwani.AssemblyInfo.cs
+D:\Central Logic Assignments\assignment_week3_Dipesh_manwwani\obj\Debug\net7.0\assignment_week3_Dipesh_manwwani.csproj.CoreCompileInputs.cache
