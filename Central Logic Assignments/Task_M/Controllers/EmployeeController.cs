@@ -36,7 +36,7 @@ namespace Task_M.Controllers
         {
             try
             {
-                employeecs employeeEntity = new employeecs();
+                Employee employeeEntity = new Employee();
 
                 employeeEntity.TaskName = employeeDTO.TaskName;
                 employeeEntity.TaskDescription = employeeDTO.TaskDescription;
@@ -60,7 +60,7 @@ namespace Task_M.Controllers
                 employeeEntity.Active = true;
                 employeeEntity.Archieved = false;
 
-                employeecs resposne = await container1.CreateItemAsync(employeeEntity);
+                Employee resposne = await container1.CreateItemAsync(employeeEntity);
 
                 // Reverse MApping 
                 employeeDTO.TaskName = resposne.TaskName;
@@ -81,7 +81,7 @@ namespace Task_M.Controllers
         public async Task<IActionResult> UpdateItem(string uId, string name, string taskDesc)
         {
 
-            employeecs existingTask = container1.GetItemLinqQueryable<employeecs>(true).Where(q => q.DocumentType == "Employee" && q.UId == uId).AsEnumerable().FirstOrDefault();
+            Employee existingTask = container1.GetItemLinqQueryable<Employee>(true).Where(q => q.DocumentType == "Employee" && q.UId == uId).AsEnumerable().FirstOrDefault();
             if (existingTask != null)
             {
                 existingTask.TaskName = name;
@@ -112,31 +112,27 @@ namespace Task_M.Controllers
             [HttpGet]
             public IActionResult GetemployeeByUId(string uId)
             {
-                try
-                {
-                    employeecs employeecs = container1.GetItemLinqQueryable<employeecs>(true).Where(q => q.DocumentType == "employee" && q.UId == uId).AsEnumerable().FirstOrDefault();
+            try
+            {
+                Employee tasks = container1.GetItemLinqQueryable<Employee>(true).Where(q => q.DocumentType == "Employee" && q.UId == uId).AsEnumerable().FirstOrDefault();
 
-                    // Reverse MApping 
-                    var employeeModel = new employeecs();
-                    employeeModel.TaskName = employeecs.TaskName;
-                    employeeModel.Id = employeecs.Id;
-                    employeeModel.TaskDescription = employeecs.TaskDescription;
-                    return Ok(employeeModel);
-
-                }
-                catch (Exception ex)
-                {
-
-                    return BadRequest("Data Get Failed");
-                }
+                var taskModel = new EmployeeDTO();
+                taskModel.TaskName = tasks.TaskName;
+                taskModel.TaskDescription = tasks.TaskDescription;
+                return Ok(taskModel);
             }
+            catch (Exception ex)
+            {
+                return BadRequest("Data Get Failed");
+            }
+        }
             [HttpGet]
             public IActionResult GetAllEmployee()
             {
                 try
                 {
 
-                    var listresponse = container1.GetItemLinqQueryable<employeecs>(true).AsEnumerable().ToList();
+                    var listresponse = container1.GetItemLinqQueryable<Employee>(true).AsEnumerable().ToList();
                     return Ok(listresponse);
 
                 }
@@ -150,7 +146,7 @@ namespace Task_M.Controllers
             [HttpDelete]
             public async Task DeleteTaskAsync(string uId)
             {
-                await container1.DeleteItemAsync<employeecs>(uId, new PartitionKey(uId));
+                await container1.DeleteItemAsync<Employee>(uId, new PartitionKey(uId));
             }
             private Container GetContainer()
             {
